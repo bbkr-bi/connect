@@ -1,0 +1,120 @@
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Parlons de votre projet</h2>
+</div>
+
+<div class="contact-container">
+
+<form class="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <!-- 🔑 Clé Web3Forms -->
+    <input type="hidden" name="access_key" value="51a3670d-79a5-4cce-9909-ed75618907aa">
+
+    <!-- Sujet email -->
+    <input type="hidden" name="subject" value="Nouvelle demande BBKR Business International">
+
+    <!-- Redirection après envoi -->
+    <input type="hidden" name="redirect"  value="https://bbkr-bi.github.io/connect/thanks">
+	
+	
+
+    <div class="form-grid">
+
+        <select name="profil" required>
+            <option value="" disabled selected>Je suis...</option>
+            <option value="Investisseur">Investisseur</option>
+            <option value="Acheteur">Acheteur</option>
+            <option value="Vendeur">Vendeur</option>
+            <option value="Partenaire">Partenaire</option>
+            <option value="Apporteur d'affaires">Apporteur d'affaires</option>
+			<option value="Autres">Autres</option>
+        </select>
+		
+		<input type="text" name="nom_complet" placeholder="Nom complet" required>
+        <input type="text" name="entreprise" placeholder="Entreprise">
+		<input type="text" name="pays" placeholder="Pays" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="tel" name="telephone" pattern="^\+?[0-9 ]{8,20}$" placeholder="+216 XX XXX XXX" required>
+		
+		<select name="secteur" required>
+            <option value="" disabled selected>Secteur d'activité</option>
+            <option value="Énergie et pétrole">Énergie et pétrole</option>
+			<option value="Industrie manufacturière">Industrie manufacturière</option>
+			<option value="BTP et construction">BTP et construction</option>
+			<option value="Transport et logistique">Transport et logistique</option>
+			<option value="Import / Export">Import / Export</option>
+			<option value="Commerce de gros">Commerce de gros</option>
+			<option value="Matières premières et métaux">Matières premières et métaux</option>
+			<option value="Agroalimentaire">Agroalimentaire</option>
+			<option value="Mines et carrières">Mines et carrières</option>
+			<option value="Équipements industriels">Équipements industriels</option>
+			<option value="Investissement et fonds d'investissement">Investissement et fonds d'investissement</option>
+			<option value="Institutions publiques et parapubliques">Institutions publiques et parapubliques</option>
+			<option value="Développement de projets internationaux">Développement de projets internationaux</option>
+        </select>
+		
+		<select name="devise" required>
+            <option value="" disabled selected>Devise</option>
+			<option value="$">Dollar US ($)</option>
+            <option value="€">Euro (€)</option>
+            <option value="TND">Dinar Tunisien (TND)</option>
+            <option value="Crypto">Crypto-Monnaie (₿)</option>
+			<option value="Autres">Autres</option>
+        </select>
+
+        <select name="budget_estime" required>
+            <option value="" disabled selected>Budget estimé</option>
+            <option value="0 - 100 000">0 - 100 000</option>
+            <option value="100 000 - 250 000">100 000 - 250 000</option>
+            <option value="250 000 - 1M">250 000 - 1M</option>
+            <option value="+ 1M">+ 1M</option>
+        </select>
+
+		<select name="urgence" required>
+			<option  value="" disabled selected>Échéance du projet</option>
+			<option value="-30j">- 30 jours</option>
+			<option value="1-3 mois">[1 - 3] mois</option>
+			<option value="3-6 mois">[3 - 6] mois</option>
+			<option value="+6 mois">+ 6 mois</option>
+		</select>
+        <textarea class="full"
+                  name="message"
+                  rows="6"
+                  placeholder="Décrivez votre projet ou la nature de l'opportunité d'affaires"
+                  required></textarea>
+				  
+		
+		<label class="full consent">
+			<input type="checkbox" name="conditions" required>
+			<span>J'accepte que mes données soient utilisées dans le cadre de ma demande de contact.</span>
+		</label>
+        
+		<!-- Anti spam invisible -->
+        <input type="checkbox" name="botcheck" style="display:none;">
+
+        <p class="full disclaimer">
+            Vos informations restent strictement confidentielles.
+            Réponse sous 24 à 48h.
+        </p>
+		<!-- Captcha -->
+		<div class="h-captcha" data-captcha="true"></div>
+		
+        <button class="submit-btn full" type="submit">
+            Être contacté
+        </button>
+
+    </div>
+
+</form>
+
+
+</div>
+
+</div>
+
+</section>

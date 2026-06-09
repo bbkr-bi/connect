@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng build --configuration production --base-href /connect/ && npx angular-cli-ghpages --dir=dist/connect"
+    "test": "ng test"
   },
   "prettier": {
     "printWidth": 100,
